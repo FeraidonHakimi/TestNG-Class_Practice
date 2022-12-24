@@ -9,6 +9,63 @@ import java.util.Map;
 
 
 public class DatabaseConnectionUtility {
+	
+	/*Code inside the class has written to connect us to the dataBase
+	 * 
+	 * JDBC(Java DataBase Connectivity): In order to connect to a dataBase we need to use JDBC.
+	 * JDBC is the libraries which allow us to connect to DataBase(MySQL, SQL Server and ...)
+	 * Then for connecting to DataBase we must have bellow information:
+	 * UserName:
+	 * Password:
+	 * URl: jdbc:mysql://tek-database-server.mysql.database.azure.com:3306/tek_insurance_app?useSSL=true&requireSSL=false
+	 * URl syntax = jdbc:DataBaseType://Host:port/DataBaseName
+	 * URL must contain these sections:
+	 * DataBaseType: jdbc:mysql
+	 * Host: tek-database-server.mysql.database.azure.com
+	 * Port: 3306
+	 * DataBaseName: tek_insurance_app
+	 * 
+	 * Note: this information will provided by developer or dataBase Manager
+	 * 
+	 * Steps of JDBC:
+	 * 
+	 * Step 1: make connection to data base using connection interface - 
+	 * we also use driverManager class which come from JDBC in order to establish the 
+	 * connection between java and DB And then pass the URL, UserName, pasword
+	 * 
+	 * Step 2 : when connection is done, we use statement method
+	 * in order to establish to send query
+	 * 
+	 * Step 3 : ExecuteQuery method to send our swl query.
+	 * 
+	 * Step 4 : Return the resultSet interface
+	 * 
+	 * Step 5 : Store the resultSet in collection(HashMap)
+	 * 
+	 * Note: in every framework that we want to use JDBC in order to connect with DB
+	 * we use take care of the dependency of that.
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     private final String url;
     private final String username;
     private final String password;
@@ -21,9 +78,9 @@ public class DatabaseConnectionUtility {
 
     private Connection getConnection() {
         try {
-            ExtentTestManager.getTest().info("Making Connection to Database");
+            ExtentTestManager.getTest().info("Making Connection to Database"); // take care of Extend report
             System.out.println("Making Connection to Database");
-            return DriverManager.getConnection(url, username, password);
+            return DriverManager.getConnection(url, username, password);// to connect to dataBase
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             System.out.println(e.getSQLState());

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CreateAccount">
+<test name="Facebook Test">
+<parameter name="name" value="feraidon"></parameter>
+<parameter name="lastName" value="Hakimi"></parameter>
+<parameter name="email" value="hakimi@gmail.com"></parameter>
+<parameter name="password" value="Qwerfghy1@"></parameter>
+<parameter name="monthValue" value="3"></parameter>
+<parameter name="dayValue" value="28"></parameter>
+<parameter name="yearValue" value="1999"></parameter>
+<classes>
+<class name="testNG4Day.FaceBookCreateAccount"></class>
+</classes>
+</test>
+</suite>

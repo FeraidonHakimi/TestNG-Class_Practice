@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HardCode">
+<test name="Hard">
+<groups>
+<run>
+<include name="smoke"></include>
+</run>
+</groups>
+<classes>
+<class name="testNG4Day.DataTableHardCode"></class>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Second">
+	<test name="Second TEst">
+		<parameter name="email" value="fearaioon@#gmail.com"></parameter>
+		<parameter name="password" value="adfafadfafd"></parameter>
+		<classes>
+			<class name="general.Second"></class>
+		</classes>
+	</test>
+</suite>

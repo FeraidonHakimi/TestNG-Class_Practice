@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Second]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Second TEst(failed)">
+    <parameter name="password" value="adfafadfafd"/>
+    <parameter name="email" value="fearaioon@#gmail.com"/>
+    <classes>
+      <class name="practice.Second">
+        <methods>
+          <include name="testOne" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- practice.Second -->
+    </classes>
+  </test> <!-- Second TEst(failed) -->
+</suite> <!-- Failed suite [Second] -->

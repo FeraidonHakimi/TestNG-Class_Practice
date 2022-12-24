@@ -13,6 +13,8 @@ import org.testng.annotations.Listeners;
 
 @Listeners({ExtentITestListenerClassAdapter.class})
 public class BaseUITest extends CommonUtility {
+	
+
 
     @BeforeMethod
     public void setUpTest() {
@@ -30,6 +32,7 @@ public class BaseUITest extends CommonUtility {
         super.quiteBrowser();
     }
 }
+
 //    /**
 //     * !!This code block is just an example only!!
 //     * !!Real-world implementation would require capturing a screenshot!!
